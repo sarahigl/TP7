@@ -1,0 +1,76 @@
+
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.item{
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+} 
+.anim-1{
+    margin-left: 40%;
+    animation: animation-1 infinite alternate 2s;
+}
+@keyframes animation-1{
+    0%{
+        background-color: azure;
+        margin-top: 0%
+    }
+    100%{
+        margin-top: 80%;
+        background-color: burlywood;
+    }
+}
+@keyframes animation-2{
+    0%{
+        margin-left: 80%;
+        background-color: palevioletred;
+    }
+    100%{
+        margin: 40%;
+        margin-left: 0%;
+        margin-top: 80%;
+        background-color: aquamarine;
+    }
+}
+.anim-2{
+    animation: animation-2 infinite alternate 2s;
+}
+@keyframes animation-3{
+    0%{
+        margin-top: 0%;
+        background-color: aqua;
+    }
+    25%{
+        margin-top: 0%;
+        margin-left: 80%;
+        background-color: beige;
+    }
+    50%{
+        margin: 40%;
+        margin-left: 0%;
+        margin-top: 80%;
+        background-color: black;
+    }
+    75%{
+        margin-top:80%;
+        margin-bottom: 0%;
+        margin-left: 80%;
+        background-color: blueviolet;
+    }
+    100%{
+        margin-left: 0%;
+        margin-top: 80%;
+        background-color: brown;
+    }
+}
+.anim-3{
+    animation: animation-3 infinite alternate 2s;
+}
